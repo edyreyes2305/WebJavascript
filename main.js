@@ -34,3 +34,34 @@ console.log("Musica de fin de semana: ", misDatos.musicaPreferida.corridosTumbad
 console.log("Nombre completo: ", misDatos.nombreCompleto());
 
 console.log("Nombre completo: ", misDatosInstagram.nombreCompleto());
+
+const cancionesPP = [
+    "Soy el belicon",
+    "El azul",
+    "El tsurito",
+    "AMG",
+    {
+        2020: 5,
+        2021: 30,
+        2022: 56,
+        total: 91
+    }
+]
+
+console.log(cancionesPP[1]);
+console.log("Canciones hechas en el anio 2021: ", cancionesPP[4][2021]);
+
+//Conversion de datos
+
+const myNumber = 420;
+console.log("Num. minutos de la sesion: " + myNumber);
+const myNumberTxt = String(myNumber);
+console.log("Num. minutos de la sesion: " + myNumberTxt);
+
+// ToNumber
+const myString = "420";
+const sumatoria = 80 + Number(myString);
+
+const myStringInteger = "420.2020";
+const sumatoriaEntera = 80 + parseInt(myStringInteger);
+console.log("Valor de sumatoria: "+sumatoriaEntera);

@@ -197,6 +197,24 @@ function cursosEnComunV2(student1Courses,student2Courses) {
 cursosEnComun( student1Courses, student2Courses );
 console.log("Cursos en comun: "+String(cursosEnComunV2(student1Courses, student2Courses)));
 
+//Ejercicio
+/* const frase = "pepe pecas pica papas con un pico y una pala"
+const contarChar = (frase) => {
+    const result = frase.split(" ");
+    return result;
+}
+const resultado = contarChar(frase);
+console.log("El total de caracteres de la frase es: "+contarChar(frase).join("").length);
+console.log(" El total de P's en esta frase es: "+resultado);
+ */
+//otra forma
+phrase = 'Pepe Pecas Pica Papas Con Un Pico y Una Pala'
+
+const countChar = (p, phrase) => phrase.toLowerCase().split("").filter(c => c == p).length;
+
+console.log("Cantidad de letras 'p':", countChar('p', phrase));
+
+
 
 //getNameAndPrint(1);
 //getNameAndPrint(2);

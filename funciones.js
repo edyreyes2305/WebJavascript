@@ -215,6 +215,17 @@ const countChar = (p, phrase) => phrase.toLowerCase().split("").filter(c => c ==
 console.log("Cantidad de letras 'p':", countChar('p', phrase));
 
 
+const recursiva = (numero) => {
+    if (numero === 1) {
+        console.log("Saludo "+numero);
+    } else {
+        recursiva(numero - 1);
+        console.log("Saludo "+numero);
+        
+    }
+}
+
+console.log(recursiva(10));
 
 //getNameAndPrint(1);
 //getNameAndPrint(2);

@@ -124,3 +124,17 @@ const getEstacion = (mes=document.getElementById("mes").value) => {
     }
 
 }
+
+function saludo(numero) {
+  if (numero > 1) {
+    saludo(numero - 1);
+  }
+  console.log("Saludo " + numero);
+}
+
+//saludo(10);
+
+const saludo2 = (numero) => {(numero>1) ? saludo(numero - 1) : {}; console.log("Saludo "+numero);};
+
+
+saludo2(5);
